@@ -1,0 +1,14 @@
+.page-nav {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        cursor: pointer;
+        font-weight: bold;
+        color: black;
+    }
+    &__item {
+        margin-top: 20px;
+    }
+}

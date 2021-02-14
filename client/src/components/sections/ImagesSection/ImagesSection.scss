@@ -1,0 +1,53 @@
+.images-section {
+  display: flex;
+  position: relative;
+
+  &__wrapper {
+    overflow:hidden;
+    width: 25vw;
+    height: 70vh;
+  }
+
+  &__price {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    &:after {
+      content: "";
+      margin: 5px auto;
+      display: block;
+      width: 7vw;
+      height: 2px;
+      background-color: orange;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+  }
+  &__text-wrapper {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    width: 25vw;
+  }
+  &__img {
+    width: 25vw;
+    height: 70vh;
+    object-fit: cover;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    -webkit-transition: all .4s ease-out;
+    &:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      z-index: 10;
+      outline: 1px solid rgba(255,255,255,.8);
+      outline-offset: -40px;
+    }
+  }
+}
+

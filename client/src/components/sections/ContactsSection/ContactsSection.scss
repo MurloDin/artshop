@@ -1,0 +1,22 @@
+.contacts-section {
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #242424;
+  &__title {
+    margin-top: 20px;
+    text-align: start;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+  }
+}
+
+
+.map-wrapper {
+  margin-top: 20px;
+  overflow: hidden;
+  &:only-child {
+    max-height: 325px;
+  }
+}

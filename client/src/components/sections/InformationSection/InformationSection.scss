@@ -1,0 +1,43 @@
+.information-section {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  height: 700px;
+  &__about {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(1,1,1,.7);
+  }
+  &__desc {
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgba(1,1,1,.6);
+  }
+  &__btn {
+    margin-top: 20px;
+    height: 60px;
+    width: 220px;
+    border: #FF8820 3px solid;
+    background-color: rgba(1,1,1,0);
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(1,1,1,.8);
+    text-transform: uppercase;
+    &:hover {
+      background-color: #FF8820;
+      border-color: #FF8820;
+      color: white;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  &__img {
+    margin-top: -50px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

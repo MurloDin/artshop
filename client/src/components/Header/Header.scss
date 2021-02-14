@@ -1,0 +1,32 @@
+.page-header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  &__logo {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &__phone {
+    margin-top: 7px;
+    float: left;
+    font-size: 20px;
+  }
+  &__btn {
+    height: 50px;
+    width: 200px;
+    float: right;
+    border: rgba(1,1,1,.1) 4px solid;
+    background-color: rgba(1,1,1,0);
+    font-weight: bold;
+    font-size: 18px;
+    color: #FF8820;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #FF8820;
+      border-color: #FF8820;
+      color: white;
+    }
+  }
+}

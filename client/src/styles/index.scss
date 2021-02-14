@@ -1,0 +1,19 @@
+@import url("./fonts.css");
+@import url("./bootstrap-grid.min.css");
+@import url("./bootstrap-reboot.min.css");
+
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    overflow-x: hidden;
+    padding:0;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+button, button:active, button:focus {
+    outline: none !important;
+}

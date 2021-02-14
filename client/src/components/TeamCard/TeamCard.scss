@@ -1,0 +1,69 @@
+.team-card {
+  margin: 0 auto;
+  width: 90%;
+  &__img-wrapper {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1000;
+      left: 53px;
+      top: 20px;
+      width: 300px;
+      height: 300px;
+      background-color: #212529;
+      opacity: 0;
+    }
+    &:hover {
+      &::after {
+        transition: .4s;
+        opacity: .5;
+      }
+      .icon {
+        transition: 1s;
+        transform: rotateY(0deg);
+        opacity: 1;
+      }
+      .team-card__border {
+        transition: .5s;
+        top: 5px;
+        left: 35px;
+      }
+    }
+  }
+
+  &__border {
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    width: 300px;
+    height: 300px;
+    border: orange 5px solid;
+    float: left;
+  }
+
+  &__title {
+    position: absolute;
+    top: 330px;
+    left: 55px;
+    font-weight: bold;
+  }
+
+  &__img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 20px;
+    right: -20px;
+  }
+}
+
+
+.icon {
+  position: absolute;
+  top: 50%;
+  z-index: 10001;
+  font-size: 26px;
+  color: rgba(255,255,255, 1);
+  transform: rotateY(180deg);
+  opacity: 0;
+}

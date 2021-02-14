@@ -1,0 +1,17 @@
+.contact-card {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  &__list {
+
+    color: rgba(255,255,255,.9);
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  &__icon {
+    z-index: 10001;
+    font-size: 50px;
+    color: rgba(255,255,255, .2);
+  }
+}
+
